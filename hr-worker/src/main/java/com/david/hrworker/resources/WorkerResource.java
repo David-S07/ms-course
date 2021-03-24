@@ -27,6 +27,7 @@ public class WorkerResource {
         return ResponseEntity.ok(list);
     }
 
+
     @GetMapping(value = "/{id}")
     // pro Id do parametro reconhecer o id do mapping usar @PAthVariable
     public ResponseEntity<Worker> findById (@PathVariable Long id) {
